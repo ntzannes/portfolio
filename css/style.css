@@ -1,0 +1,256 @@
+/*Web type scale*/
+
+/*http://type-scale.com/*/
+
+html {
+    /*    1em = 16px*/
+    font-size: 1em;
+}
+
+body {
+    background-color: white;
+    font-family: 'Noto Serif SC', sans-serif;
+    /*    font-weight: 400;*/
+    /*    150% of the font size*/
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+/*this is a group selection, selecting all the headlines h1-h4*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Noto Serif SC', serif;
+    /*  top:1.414em right:0  bottom:0.5em left:0*/
+    margin: 1.414em 0 0.5em 0;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.157em;
+}
+
+h2 {
+    font-size: 2.369em;
+}
+
+h3 {
+    font-size: 1.777em;
+}
+
+h4 {
+    font-size: 1.333em;
+}
+
+small,
+.font_small {
+    font-size: 0.75em;
+}
+
+
+/* link*/
+
+a {
+    color: #222e48;
+}
+
+a:hover {
+    color: #B2B1AE;
+}
+
+/*button style*/
+/*solid button style*/
+.btn {
+    font-size: 1rem;
+    letter-spacing: .1em;
+    line-height: 2em;
+    border-radius: 3em;
+    /*    top:1.8 right:3.6 bottom 1.8 left3.6*/
+    padding: .5em 1em;
+    color: slategrey;
+    background: rgb(71, 80, 105);
+    border: none;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+/*outline buttons*/
+.btn-outline-primary {
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    transition: all 0.5s;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: grey;
+}
+
+.view {
+    background: url(../img/rsz_3img_9547-3.jpg) center center no-repeat;
+    padding: 19.5em 0;
+  
+}
+
+.grey {
+    background-color: #c9ccd4;
+    padding-bottom: 100px;
+    font-family: 'Noto Serif SC', serif;
+    color: #4b4e52;
+}
+.row{
+    padding-top 30px;
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+
+.logo{
+    font-size: 3em;
+    padding-left: 25px;
+    color: #4b4e52;
+}
+
+.about{
+    color: #4b4e52;
+    padding-left: 360px;
+    padding-top: 100px;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.carousel{
+    padding-left: 150px;
+    padding: 150px;
+    margin-bottom: 50px;
+}
+
+.landscapes{
+    margin-top = 100px;
+}
+
+.people{
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    background-color: #29385f;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7px;
+    padding-bottom: 3.5px
+}
+
+.landscapes{
+    color:white;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    background-color: #29385f;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7px;
+    padding-bottom: 3.5px
+}
+
+.travel{
+    color:white;
+    margin-top: 100px;
+    margin-bottom: 5px;
+     background-color: #2c3857;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7px;
+    padding-bottom: 3.5px
+}
+.padding {
+    margin-top:100px;
+}
+
+.carousel.slide{
+    padding-top:0px;
+    padding-bottom:0px;
+    
+}
+
+.div.container{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.social {
+    font-size: 2em;
+    color: #2c3857;
+    padding: .5em;
+}
+
+.text-center {
+    color: #2c3857;
+}
+
+.navbackground {
+    background-color: white;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    /*    disable the button border*/
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-brand {
+    color: #2c3857;
+    padding-top: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .5);
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.navbar-brand page-scroll{
+    color: grey;
+    margin-bottom: 0px;
+
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #2c3857;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #2c3857;
+}
+
+#contact{
+    background-color: #c9ccd4;
+    padding-top:10px;
+    font-family: 'Roboto', sans-serif;
+}
