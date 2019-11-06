@@ -16,9 +16,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-div.logo {
+.logo {
   padding-left: 15px;
-  justify-content: center;
+  align-content: center;
 }
 
 .nav {
@@ -28,35 +28,97 @@ div.logo {
     text-align: center;
 }
 
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.nav-links{
+  display: inline;
+  text-align: center;
 }
 
-.nav a {
+.nav span {
     text-decoration: none;
     font-size: 16px;
     color: black;
 }
 
 .nav li {
-    display: inline;
+    display: inline-block;
     padding-right: 15px;
 }
 
-.nav-item:hover a {
-  tex-decoration: underline;
+/* this was from an outside source, how to source? */
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
 }
 
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: black;
+}
+
+span:before {
+  left: -2.5px;
+}
+
+span:after {
+  right: 3px;
+  background: black;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: black;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 105%;
+  transition: 0s;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* .nav-item:hover {
+  text-decoration: line-through;
+
+} */
+/* .nav-item-2:hover ~ hr{
+  margin-left: 25%;
+}
+
+.nav-item-3:hover ~ hr{
+  margin-left: 50%;
+}
+
+.nav-item-4:hover ~ hr{
+  margin-left: 75%;
+}
+
+hr {
+  height: .25rem;
+  width: 20%;
+  margin: 0;
+  background: tomato;
+  border: none;
+  transition: .3s ease-in-out;
+} */
+
 .item {
-    width: auto;
-    height: 400px;
-    margin-bottom: 10px;
+    width: 400px;
+    height: auto;
     box-shadow: 0px 0px 10px 2px #E1E1E1;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 .flex-container {
@@ -118,4 +180,5 @@ ul {
     margin-bottom: 35px;
     box-shadow: 0px 0px 10px 2px #E1E1E1;
     object-fit: cover;
+}
 }
