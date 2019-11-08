@@ -17,11 +17,20 @@ body {
 }
 
 .logo {
+  grid-column: 1 / auto;
+  grid-row: 1 / auto;
   padding-left: 15px;
   align-content: center;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav {
+    grid-column: 1 / auto;
+    grid-row: 2 / auto;
     margin-bottom: 20px;
     justify-self: center;
     align-self: center;
@@ -42,6 +51,17 @@ body {
 .nav li {
     display: inline-block;
     padding-right: 15px;
+}
+
+.parallax {
+    background-image: url(../img/me2.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    margin: 10px;
 }
 
 /* this was from an outside source, how to source? */
@@ -83,35 +103,17 @@ span:hover:after {
   transition: 0s;
 }
 
+span.current {
+
+    text-decoration: underline;
+
+}
+
 a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: none;
 }
-/* .nav-item:hover {
-  text-decoration: line-through;
-
-} */
-/* .nav-item-2:hover ~ hr{
-  margin-left: 25%;
-}
-
-.nav-item-3:hover ~ hr{
-  margin-left: 50%;
-}
-
-.nav-item-4:hover ~ hr{
-  margin-left: 75%;
-}
-
-hr {
-  height: .25rem;
-  width: 20%;
-  margin: 0;
-  background: tomato;
-  border: none;
-  transition: .3s ease-in-out;
-} */
 
 .item {
     width: 400px;
@@ -121,16 +123,36 @@ hr {
     margin-bottom: 15px;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+}
+
 .flex-container {
     display: -webkit-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 30px;
+    grid-column: 1 / auto;
+    grid-row: 3 / auto;
     -webkit-box-pack: space-between;
     justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
+}
+
+.contact{
+    background-color: #c9ccd4;
+    padding-top:10px;
+
+}
+
+.about {
+  padding-top: 150px;
+  text-align: center;
+  color: white;
 }
 
 @media screen and (min-width: 800px){
@@ -172,8 +194,6 @@ hr {
     margin-bottom: 40px;
 }
 
-
-
 .item {
     width: 48%;
     height: auto;
@@ -181,4 +201,18 @@ hr {
     box-shadow: 0px 0px 10px 2px #E1E1E1;
     object-fit: cover;
 }
+
+.me {
+  width: 100%;
+  height: auto;
+  margin-bottom: 35px;
+  box-shadow: 0px 0px 10px 2px #E1E1E1;
+  object-fit: cover;
+}
+
+.parallax {
+    width: 60vw;
+}
+
+
 }
