@@ -1,15 +1,14 @@
 html {
   box-sizing: border-box;
 }
-.skip a {
-    background: white;
-    left: 0;
-    padding: 6px;
-    top: -40px;
-    position: relative;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
 }
 
 body {
@@ -53,7 +52,10 @@ body {
     padding-left: 7.5px;
 }
 
-
+.active {
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
 
 /* this was from an outside source, how to source? */
 span {
@@ -134,20 +136,16 @@ a:-webkit-any-link {
     align-items: center;
 }
 
-.contact{
-    background-color: #c9ccd4;
-    padding-top:10px;
-
-}
-
 .parallax {
     background-image: url(../img/me2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    position: relative;
+    width: 90vw;
     height: 70vw;
+    margin-bottom: 25px;
 }
 
 
@@ -157,18 +155,20 @@ a:-webkit-any-link {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 90vw;
     height: 40vw;
+    margin-bottom: 25px;
 }
 
 .parallax3 {
-    background-image: url(../img/people/boat.jpg);
+    background-image: url(../img/people/boat.JPG);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 90vw;
     height: 40vw;
+    margin-bottom: 25px;
 }
 
 .parallax4 {
@@ -177,8 +177,10 @@ a:-webkit-any-link {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 90vw;
     height: 40vw;
+    margin-bottom: 25px;
+
 }
 
 /* .about-me {
@@ -187,8 +189,9 @@ a:-webkit-any-link {
   grid-template-columns: 1fr;
 } */
 .about {
-  padding-top: 75px;
+  padding-top: 200px;
   text-align: center;
+  justify-content: center;
   color: white;
   margin: 20px;
 }
@@ -201,15 +204,49 @@ a:-webkit-any-link {
 }
 
 .nav2 {
-  padding-top: 60px;
+  margin: auto;
   text-align: center;
   color: white;
   margin: 20px;
 }
 
+h2 {
+  padding-top: 75px;
+  color: white;
+  text-align: center;
+  font-size: 25pt;
+}
+
+.greeting {
+  color: white;
+  text-align: center;
+  font-size: 12pt;
+  margin: 20px;
+}
 
 
-@media screen and (min-width: 800px){
+.contact {
+  font-size: 40px;
+  color: #0f4a83;
+}
+
+@media screen and (min-width: 600px){
+  .flex-container {
+      display: -webkit-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 30px;
+      grid-column: 1 / auto;
+      grid-row: 3 / auto;
+      -webkit-box-pack: space-between;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      align-items: center;
+  }
+
+}
+@media screen and (min-width: 1000px){
   .nav {
       grid-column-start: 2;
       grid-row-start: 1;
@@ -226,11 +263,12 @@ a:-webkit-any-link {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: 1fr 8fr;
 }
 
 .flex-container {
+    align-content: flex-start
     display: -webkit-box;
     display: flex;
     flex-direction: row;
@@ -264,9 +302,62 @@ a:-webkit-any-link {
   object-fit: cover;
 }
 
-.parallax {
-    width: 60vw;
+ .about-me  {
+   display: grid;
+   grid-column: 1;
+   grid-row: 2/ auto;
+ }
+
+ .about {
+   display: grid;
+   grid-row: 2/ 2;
+ }
+
+ .parallax {
+   margin-top: auto;
+   height: 25vw;
+   margin-bottom: 50px;
+ }
+ .parallax2 {
+   height: 15vw;
+   margin-bottom: 50px;
+ }
+ .parallax3 {
+   height: 15vw;
+   margin-bottom: 50px;
+ }
+ .parallax4 {
+   height: 15vw;
+   margin-bottom: 50px;
+ }
+
+ h2 {
+   padding-top: 50px;
+   font-size: 30pt;
+   color: white;
+   text-align: center;
+ }
+
+ h2.menu-item {
+   margin: auto;
+   font-size: 30pt;
+   color: white;
+   text-align: center;
+ }
+
+ .greeting {
+   text-align: center;
+   font-size: 15pt;
+   color: white;
+ }
+.contact {
+  color: #0f4a83;
 }
+
+p.info {
+  padding-left: 20px;
+}
+
 
 
 }
