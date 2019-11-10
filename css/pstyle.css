@@ -1,14 +1,28 @@
 html {
   box-sizing: border-box;
 }
-a.skip-main {
-    left: -999px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    z-index: -999;
+h1.skip-main{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  color: white
+}
+
+.skip-main:focus {
+    color: black;
+    position:absolute;
+    top:auto;
+    overflow:hidden;
+}
+
+*:focus{
+  color: black;
+  border: 2px solid black;
 }
 
 body {
@@ -57,7 +71,6 @@ body {
   text-decoration-color: black;
 }
 
-/* this was from an outside source, how to source? */
 span {
   position: relative;
   display: block;
@@ -97,13 +110,17 @@ span:hover:after {
 }
 
 span.current {
-
     text-decoration: underline;
-
 }
 
 a:-webkit-any-link {
     color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:-webkit-any-link:focus {
+    color: black;
     cursor: pointer;
     text-decoration: none;
 }
@@ -355,7 +372,7 @@ h2 {
 }
 
 p.info {
-  padding-left: 20px;
+
 }
 
 
