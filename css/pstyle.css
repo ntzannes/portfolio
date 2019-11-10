@@ -367,12 +367,14 @@ h2 {
    font-size: 15pt;
    color: white;
  }
+
 .contact {
+  padding-top: 0px;
   color: #0f4a83;
 }
 
 p.info {
-
+  padding-left:25pt;
 }
 
 
