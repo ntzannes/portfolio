@@ -71,6 +71,10 @@ body {
   text-decoration-color: black;
 }
 
+
+/* CITATIION: used  https://codepen.io/tsimenis/pen/BKdENX to develop the following lines
+regarding the nav span effect */
+
 span {
   position: relative;
   display: block;
@@ -245,6 +249,7 @@ h2 {
 .contact {
   font-size: 40px;
   color: #0f4a83;
+  text-align: left;
 }
 
 @media screen and (min-width: 600px){
@@ -263,7 +268,7 @@ h2 {
   }
 
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
   .nav {
       grid-column-start: 2;
       grid-row-start: 1;
@@ -371,11 +376,9 @@ h2 {
 .contact {
   padding-top: 0px;
   color: #0f4a83;
+  text-align: left;
 }
 
-p.info {
-  padding-left:25pt;
-}
 
 
 
