@@ -271,6 +271,13 @@ h2 {
     font-size: 18pt;
   }
 
+  a {
+    padding-top: 75px;
+    color: white;
+    text-align: center;
+    font-size: 40pt;
+  }
+
 
 }
 @media screen and (min-width: 1200px){
