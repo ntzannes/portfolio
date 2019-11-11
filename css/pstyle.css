@@ -252,6 +252,12 @@ h2 {
   text-align: left;
 }
 
+.message {
+  font-family: Montserrat, sans-serif;
+  font-size: 15pt;
+  color: #0f4a83;
+}
+
 @media screen and (min-width: 600px){
   .flex-container {
       display: -webkit-box;
@@ -391,7 +397,9 @@ h2 {
   text-align: left;
 }
 
-
+.contact-form{
+  padding-bottom: 20px;
+}
 
 
 }
