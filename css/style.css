@@ -11,7 +11,7 @@ html {
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  font-size: 12pt;
+  font-size: 16pt;
 }
 
 .skip:focus {
